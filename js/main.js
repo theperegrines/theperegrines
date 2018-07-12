@@ -1,0 +1,3 @@
+(function($){"use strict";var path=document.location.pathname;path=path.replace('/','');$('.nav li a').each(function(){if($(this).attr('href')==path)
+$(this).parent().addClass('active');});if(path=='')
+path='index';$('.origin').val(path);$(".modal").on("hidden.bs.modal",function(){var t=$(this);t.find('form').show();t.find('.alert').hide();t.find('form')[0].reset();});$('.navbar-collapse ul li a').click(function(){$('.navbar-toggle:visible').click();});$('#mainNav').affix({offset:{top:100}});})(jQuery);

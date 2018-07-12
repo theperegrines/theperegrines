@@ -1,0 +1,67 @@
+.team-member{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.team-member img{
+    margin:0 auto;
+    width:70%;
+}
+
+.team-member h4{
+    margin-top:25px;
+    margin-bottom:0;
+    color:#84fc05 ;
+}
+
+.list-group-item{
+    border-radius:0;
+    border:0;
+    background:none;
+    line-height:40px;
+    font-size:16px;
+}
+
+
+
+#founders .col-md-3:hover .thumbnail a,#mentors .col-md-3:hover .thumbnail a{
+    color:#0083be!important;
+}
+
+@media (max-width: 768px) {
+    #founders .col-md-3 .thumbnail a,#mentors .col-md-3 .thumbnail a{
+        color:#0083be!important;
+    }
+    .slide-img img,video{
+        height:175px!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .slide-img img,video{
+        height:400px!important;
+    }
+}
+
+.blink:before{
+    animation:blink-animation 1s infinite;
+    -webkit-animation:blink-animation 1s infinite;
+}
+
+@keyframes blink-animation{
+    from{
+        color:#fff;
+    }
+    to{
+        color:#84fc05;
+    }
+}
+
+@-webkit-keyframes blink-animation{
+    from{
+        color:#fff;
+    }
+    to{
+        color:#84fc05;
+    }
+}
